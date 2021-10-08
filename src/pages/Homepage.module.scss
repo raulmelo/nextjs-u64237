@@ -1,0 +1,75 @@
+
+.logoBanner {
+  max-width: 280px;
+  padding-top: 35px;
+  margin-left: 6px;
+}
+
+.MiddleBanner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.FooterBanner {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 30px;
+}
+
+
+.sectionIpe__featureImage {
+  position: relative;
+  min-height: 742px;
+  display: block;
+  @media only screen and ( max-width: 890px) {
+    min-height: auto;
+    margin-top: 40px
+  }
+  img {
+    position: absolute;
+    right: 0;
+    width: max-content;
+    max-width: none;
+    @media only screen and ( max-width: 890px) {
+      position: static;
+      max-width: 100%;
+    }
+  }
+}
+.sectionIpe__featureImage_right {
+  position: relative;
+  min-height: 798px;
+  display: block;
+  @media only screen and ( max-width: 890px) {
+    min-height: auto;
+    margin-top: 40px
+  }
+  img {
+    position: absolute;
+    left: 0;
+    width: max-content;
+    max-width: none;
+    max-height: 798px;
+    object-fit: scale-down;
+
+    @media only screen and ( max-width: 890px) {
+      position: static;
+      max-width: 100%;
+    }
+  }
+}
+
+.grid-steps {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(250px, 312px));
+  grid-gap: 30px;
+  justify-content: space-between;
+  @media only screen and ( max-width: 890px) {
+    grid-template-columns: 1fr 1fr;
+  }
+  @media only screen and ( max-width: 700px) {
+    grid-template-columns: 1fr
+  }
+ }
